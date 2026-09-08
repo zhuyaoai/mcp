@@ -1,0 +1,20 @@
+{
+  "title": "逐曜AI Agent Key",
+  "title_en": "ZhuyaoAI Agent Key",
+  "description": "填入逐曜AI Agent API Key（agk_ 开头）。凭证仅保存在本机，不会上传云端。",
+  "description_en": "Enter your ZhuyaoAI Agent API Key (starts with agk_). The credential is stored locally only and never uploaded.",
+  "docUrl": "https://www.zhuyaoai.com",
+  "docLabel": "前往逐曜AI 官网注册并创建 Agent Key",
+  "docLabel_en": "Visit zhuyaoai.com to register and create an Agent Key",
+  "fields": [
+    {
+      "key": "ZHUYAO_AGENT_KEY",
+      "label": "Agent API Key（agk_ 开头）",
+      "label_en": "Agent API Key (starts with agk_)",
+      "type": "password",
+      "required": true,
+      "placeholder": "agk_****",
+      "description": "登录 www.zhuyaoai.com 后，在管理端「设置 → 智能体接入」创建，创建时只展示一次"
+    }
+  ]
+}
