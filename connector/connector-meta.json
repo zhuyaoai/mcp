@@ -1,0 +1,25 @@
+{
+  "name": "逐曜AI GEO 全链路",
+  "name_zh": "逐曜AI GEO 全链路",
+  "name_en": "ZhuyaoAI GEO Suite",
+  "source": "zhuyaoai-geo-suite",
+  "type": "mcp",
+  "version": "1.0.0",
+  "auth_mode": "token",
+  "minWorkbuddyVersion": "4.24.0",
+  "description": "接入逐曜AI 系统：知识库管理、AI 文章创作、官网内容更新、图集选图配图、案例库、视频制作、GEO 品牌监测——65 个语义化工具 + 工作流蓝图引导。",
+  "description_zh": "接入逐曜AI 系统：知识库管理、AI 文章创作、官网内容更新、图集选图配图、案例库、视频制作、GEO 品牌监测——65 个语义化工具 + 工作流蓝图引导。",
+  "description_en": "Connect to the ZhuyaoAI system: knowledge base management, AI article creation, website content updates, gallery image selection, case library, video creation, GEO brand monitoring — 65 semantic tools with workflow blueprints.",
+  "examples_zh": [
+    "把这份产品资料写进我的知识库",
+    "根据这篇行业文章生成口播视频",
+    "查一下我们品牌在豆包/DeepSeek 上的可见度排名",
+    "为这篇新文章自动配图并同步到官网"
+  ],
+  "examples_en": [
+    "Store this product material into my knowledge base",
+    "Turn this article into a spoken video",
+    "Check our brand visibility ranking on Doubao and DeepSeek",
+    "Auto-select images for the new article and sync it to the website"
+  ]
+}

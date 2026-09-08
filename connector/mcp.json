@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "zhuyaoai": {
+      "type": "streamableHttp",
+      "url": "https://www.zhuyaoai.com/mcp/",
+      "headers": {
+        "X-Agent-API-Key": "${ZHUYAO_AGENT_KEY}"
+      },
+      "timeout": 30000,
+      "disabledTools": ["video_publish", "publish_trigger"]
+    }
+  }
+}
