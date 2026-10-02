@@ -49,7 +49,7 @@ MCP 端点:      {ZHUYAO_MCP}  = https://www.zhuyaoai.com/mcp/（带尾斜杠）
 ```
 
 > - 以上为**当前默认部署地址**；换环境后以**管理端「接入方式」弹窗**展示的 origin 为权威（弹窗端点随浏览器地址动态生成，永不过期）。接入侧把 Base/MCP 设为环境变量（唯一入口），换环境改变量值，绝不改文档/代码硬编码。
-> - 正式域名 `www.zhuyaoai.com` 已启用（Let's Encrypt 证书，客户端无需任何证书特殊处理）；旧部署地址 `https://115.190.254.234:8081` 仍兼容，但正式接入一律用域名端点。
+> - 正式域名 `www.zhuyaoai.com` 已启用（Let's Encrypt 证书，客户端无需任何证书特殊处理）。接入一律使用域名端点，不使用 IP 直连。
 
 > - 认证头（REST 所有接口）：`X-Agent-API-Key: agk_xxx`
 
