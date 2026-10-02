@@ -1,6 +1,6 @@
 # 逐曜AI GEO 全链路 MCP Server
 
-> 让你的 AI 智能体直接驱动一套成熟的 GEO 获客系统：管理企业知识库、批量创作 AI 文章与口播视频、自动配图、沉淀客户案例，并追踪品牌在豆包、DeepSeek 等 9 大 AI 平台的可见度。
+> 让你的 AI 智能体直接驱动一套成熟的 GEO 获客系统：管理企业知识库、批量创作 AI 文章与口播视频、自动配图、沉淀客户案例，并追踪品牌在豆包、DeepSeek、腾讯元宝、Kimi、通义千问、文心一言、智谱清言、讯飞星火、360搜索 上的可见度。
 
 [![协议](https://img.shields.io/badge/protocol-MCP-blue)](https://modelcontextprotocol.io) [![接入](https://img.shields.io/badge/接入-免费-green)](https://www.zhuyaoai.com) [![传输](https://img.shields.io/badge/transport-streamableHttp-informational)](https://www.zhuyaoai.com/mcp/)
 
@@ -8,19 +8,19 @@
 
 ## 这是什么
 
-**逐曜AI**（[www.zhuyaoai.com](https://www.zhuyaoai.com)）是一个 GEO（Generative Engine Optimization，AI 搜索优化）SaaS 系统。本仓库提供它的 **MCP Server 接入说明**：任何支持 MCP 协议的智能体（WorkBuddy、扣子、Claude、自研 Agent 等）都可以通过 60+ 个语义化工具，把"内容生产 → 官网同步 → AI 可见度监测"整条链路接进对话里。
+**逐曜AI**（[www.zhuyaoai.com](https://www.zhuyaoai.com)）是一个 GEO（Generative Engine Optimization，AI 搜索优化）SaaS 系统。本仓库提供它的 **MCP Server 接入说明**：任何支持 MCP 协议的智能体（WorkBuddy、扣子、Claude、自研 Agent 等）都可以通过 **65 个语义化工具**（MCP v1.3.2），把"内容生产 → 官网同步 → AI 可见度监测"整条链路接进对话里。
 
 能力域一览：
 
 | 能力域 | 能做什么 |
 |--------|----------|
-| 知识库 / RAG | 企业知识 9 大模块写入（更新式 upsert）、语义检索 |
+| 知识库 / RAG | 企业知识库分类模块写入（更新式 upsert）、语义检索 |
 | 文章 | 批量 AI 生成（异步）、多平台格式改写、发布到自有官网 |
 | 官网 | 知识库模块 + 托管站内容同步、宣传博客上传 |
 | 图集 | 图片/视频上传（自动压缩打标）、按关键词语义选图、相册管理 |
 | 案例库 | 客户案例增删改查（五要素结构化）、语义匹配自动选案例 |
 | 视频 | 文章转口播稿 → TTS → 渲染出片（异步）、内置 24 首可商用 BGM（也可传音频直链，自动下载混入）、播放签名 URL |
-| GEO 监测 | 创建品牌监测任务、采集 9 大 AI 平台回答、可见度/首推率分析 |
+| GEO 监测 | 创建品牌监测任务、采集豆包/DeepSeek/腾讯元宝/Kimi/通义千问/文心一言/智谱清言/讯飞星火/360搜索 的回答、可见度/首推率分析 |
 | AI 检测 | 单次诊断：多 AI 平台交叉对比、信源重叠分析 |
 | 蒸馏词 | 行业关键词分组管理（地域词/长尾词体系） |
 | DSH 沙箱 | 代码执行 / 数据分析异步任务 |
@@ -117,6 +117,11 @@ curl https://www.zhuyaoai.com/api/open/agent/me \
 - 官网：[www.zhuyaoai.com](https://www.zhuyaoai.com)
 - 接入问题：注册后在管理端「智能体接入」页获取接入弹窗与文档
 - MCP / REST 双协议能力等价，故障排查见 `docs/`
+
+## 相关开源仓库
+
+- [content-criteria-engine](https://github.com/zhuyaoai/content-criteria-engine) —— 面向大模型抓取的**文章结构判据引擎**（842 行 TypeScript，含两处已知缺陷的原样保留）
+- [ai-visibility-tools](https://github.com/zhuyaoai/ai-visibility-tools) —— AI 可见度监测只读工具集（豆包会话读取、平台可抓取性与收录巡检）
 
 ---
 
